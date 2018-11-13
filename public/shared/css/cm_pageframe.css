@@ -1,0 +1,335 @@
+@charset "utf-8";
+/* ============================================================
+＠＠
+ページフレーム共通CSS
+
+%update / 2013.02.07
+
+▼共通エリアクラス
+【HeaderArea】
+【MainContentArea】
+【FooterArea】
+
+============================================================ */
+
+/* ------------------------------------------------------------
+▼共通エリアクラス
+------------------------------------------------------------ */
+html{
+	overflow-y: scroll;
+}
+body {
+	background-color: #e8e4dc;
+	color: #333333;
+}
+.moveParallax {
+	position: relative;
+}
+.moveParallax .parallaxObj {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#ContentWrap {
+	font-size: 108%; /*14px*/
+	letter-spacing: 0.1em;
+	min-width: 1130px;
+	position: relative;
+}
+#NoScriptWarning {
+	background-color: #3c3c3c;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#NoScriptWarning p {
+	border: 10px solid #ffcc66;
+	color: #FFF;
+	padding: 10px;
+	text-align: center;
+}
+#SideBgArea #SideBgL {
+	position: absolute;
+	left: 0;
+	top: 229px;
+	height: 532px;
+	background: url(/shared/img/main_bg_side_01.png) no-repeat left top scroll;
+}
+#SideBgArea #SideBgR {
+	position: absolute;
+	right: 0;
+	top: 284px;
+	height: 478px;
+	background: url(/shared/img/main_bg_side_02.png) no-repeat right top scroll;
+}
+#Header,
+#MainContents,
+#FooterImg01,
+#Footer {
+	clear: both;
+}	
+
+/* ------------------
+【HeaderArea】
+------------------ */
+#Header {
+	width: 980px;
+	margin: 0 auto 14px;
+}
+#Header #HdLogo {
+	margin-top: 16px;
+}
+#Header #HdBox01 {
+	background: url(/shared/img/hd_bg_navi_01.gif) repeat-x left top scroll;
+	width: 783px;
+	padding: 16px 0 18px;
+	line-height: 1.0em;
+}
+#Header #HdBox01 .cmLinkLine01 li {
+	margin-right: 19px;
+}
+
+/* ------------------
+【MainContents】
+------------------ */
+#MainContents {
+	background: url(/shared/img/main_bg_tonbo_01.gif) no-repeat top center scroll;
+}
+#MainContents #MainContInr01 {
+	background: url(/shared/img/main_bg_tonbo_02.gif) no-repeat center center scroll;
+}
+#MainContents #MainContInr01 #MainContInr02 {
+	background: url(/shared/img/main_bg_tonbo_03.gif) no-repeat bottom center scroll;
+	padding: 28px 0;
+}
+#MainContents #MainContInr01 #MainContInr02 #MainContInr03 {
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 28px;
+	padding: 0;
+	position: relative;
+}
+/* GNaviArea */
+#MainContents #GNaviArea {
+	background-color: #ffffff;
+	float: left;
+	width: 90px;
+	z-index: 9900;
+	line-height: 1.6em;
+}
+#MainContents #GNaviArea a,
+#MainContents #GNaviArea a:hover {
+	color: #ffffff;
+	display: block;
+	text-decoration: none;
+}
+#MainContents #GNaviArea li.glbNaviBox {
+	position: relative;
+	z-index: 9990;
+	float: left;
+}
+#MainContents #GNaviArea .glbNaviNest {
+	position: absolute;
+	left: 90px;
+	top: 0;
+	font-size: 86%; /* 12px */
+	color: #ffffff;
+	z-index: 9900;
+}
+#MainContents #GNaviArea .glbNaviNest .glbNestList01 {
+	float: left;
+}
+#MainContents #GNaviArea .glbNaviNest .glbNestList01 li {
+	display: block;
+	white-space: nowrap;
+}
+#MainContents #GNaviArea .glbNaviNest .glbNestList01 li a {
+	display: block;
+	margin-left: 1px;
+	min-width: 215px;
+	border-bottom: solid 1px #5a5a5a;
+	background: url(/shared/img/gnav_bg_01.png) repeat left top scroll;
+}
+#MainContents #GNaviArea .glbNaviNest .glbNestList01 li a:hover {
+	background: url(/shared/img/gnav_bg_01_on.png) repeat left top scroll;
+}
+#MainContents #GNaviArea .glbNaviNest .glbNestList01 li a span {
+	display: block;
+	cursor: pointer;
+	padding: 10px 10px 10px 27px;
+	background: url(/shared/img/gnav_bg_arw_01.png) no-repeat 12px center scroll;
+}
+#MainContents #GNaviArea .glbNaviNest .glbNestList01 li.cmLastItem a span {
+	border-bottom: none;
+}
+/* ContentsBox */
+#MainContents #ContentsBox {
+	float: right;
+	width: 890px;
+	background-color: #ffffff;
+	overflow: hidden;
+	position: relative;
+}
+#MainContents #ContentsBox #ContentsBoxInr {
+	padding: 10px 25px 25px 25px;
+}
+/* TopicPathArea */
+#MainContents #ContentsBox #TopicPathArea {
+	font-size: 86%; /* 12px */
+	margin-bottom: 10px;
+}
+#MainContents #ContentsBox #TopicPathArea strong {
+    font-weight: normal;
+}
+#MainContents #ContentsBox #TopicPathArea li {
+    display: inline;
+}
+#MainContents #ContentsBox #TopicPathArea li .topicPathSepa {
+	height: 1em;
+	line-height: 1em;
+	padding: 0 8px;
+}
+/* SNaviArea */
+#MainContents #ContentsBox #SNaviArea {
+	margin-bottom: 27px;
+}
+#MainContents #ContentsBox #SNaviArea li {
+	display: inline-block;
+	position: relative;
+	border-left: solid 1px #c2c0bb;
+}
+#MainContents #ContentsBox #SNaviArea li .crNaviBdr {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	height: 3px;
+	width: 100%;
+}
+/* for IE7 */
+*:first-child+html #MainContents #ContentsBox #SNaviArea li {
+	display: inline;
+	zoom: 1;
+}
+#MainContents #ContentsBox #SNaviArea li a {
+	display: table-cell;
+	min-width: 160px;
+	color: #333333;
+	font-weight: bold;
+}
+/* for IE7 */
+*:first-child+html #MainContents #ContentsBox #SNaviArea li a {
+	display: inline;
+	zoom: 1;
+	cursor: pointer;
+	text-align: left;
+}
+#MainContents #ContentsBox #SNaviArea li a span {
+	display: table-cell;
+	padding: 3px 10px 3px 0;
+	vertical-align: middle;
+}
+#MainContents #ContentsBox #SNaviArea li a span.naviImg {
+	padding-left: 12px;
+}
+/* for IE7 */
+*:first-child+html #MainContents #ContentsBox #SNaviArea li a span {
+	display: inline;
+	zoom: 1;
+}
+/* ContentsHdBox01 */
+#MainContents #ContentsBox #ContentsHdBox01 {
+	width: 890px;
+	background: url(/shared/img/cm_bg_hdbox_01.png) center bottom no-repeat scroll;
+	padding: 0 0 7px;
+	margin: 0 0 33px -25px;
+	z-index: 9000;
+}
+#MainContents #ContentsBox #ContentsHdBox01 #ContentsHdBox01Inr {
+	background-color: #ffffff;
+	padding: 17px 25px 0;
+}
+#MainContents #ContentsBox #ContentsHdBox01 .cmHasImgTit02 {
+	margin-bottom: 12px;
+}
+#MainContents #ContentsBox #ContentsHdBox01 .cmLinkLine01 {
+	padding: 0 16px 13px;
+}
+
+/* ------------------
+【Footer】
+------------------ */
+#FooterImg01 {
+	width: 980px;
+	margin: 0 auto 67px;
+	text-align: right;
+}
+#FooterLink01 {
+	position: fixed;
+	bottom: 100px;
+	right: 0;
+	z-index: 9000;
+}
+#Footer {
+	position: relative;
+	background-color: #736e65;
+	color: #ffffff;
+}
+#Footer #FooterInr {
+	padding: 10px 0;
+	width: 980px;
+	margin: 0 auto;
+}
+#Footer a {
+	color: #ffffff;
+	z-index: 9999;
+	position: relative;
+}
+#Footer #FtLink01 li {
+	display: inline;
+}
+#Footer #FtLink01 li .ftLink01Mrk {
+	height: 1em;
+	line-height: 1em;
+	padding: 0 12px;
+	vertical-align: baseline;
+	background: url(/shared/img/ft_bg_sepa_01.gif) no-repeat center center scroll;
+}
+#Footer #FooterBg {
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	height: 107px;
+	width: 166px;
+	background: url(/shared/img/ft_bg_01.png) no-repeat left top scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#MainContents #GNaviArea li a,
+#MainContents #GNaviArea li a span,
+#MainContents #GNaviArea .glbNaviNest,
+#MainContents #GNaviArea .glbNaviNest .glbNestList01 {
+	zoom: 1;
+}

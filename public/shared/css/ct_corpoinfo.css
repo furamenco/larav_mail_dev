@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* ============================================================
+＠＠
+各カテゴリ用/corpoinfo
+
+
+%update / 2013.02.07
+
+▼カテゴリ共通用CSS
+▼ページ用CSS
+
+============================================================ */
+
+/* ------------------------------------------------------------
+▼カテゴリ共通用CSS
+※新規作成したCSSは名前の先頭に『ct』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+[%[BodyClass名]%] #MainContents .ctHogeHoge01
+[%[BodyClass名]%] #MainContents #CtHogeHoge01
+======================= */
+
+
+/* ------------------------------------------------------------
+▼ページ用CSS
+※新規作成したCSSは名前の先頭に『pg』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+------------------
+【[%[BodyID名]%]】
+------------------
+[%[BodyID名]%] #MainContents .pgHogeHoge01
+[%[BodyID名]%] #MainContents #PgHogeHoge01
+======================= */
+
+/* ------------------
+【CorpoinfoIndex】
+------------------ */
+#CorpoinfoIndex #MainContents #PgContentBg01 {
+	background-color: #d9d4cb;	
+}
+#CorpoinfoIndex #MainContents #PgContentBg01 #PgContentBg01Inr {
+	background: url(/corporateinfo/img/index_bg_main_01.gif) left top no-repeat scroll;
+	margin-left: -5px;
+	padding-left: 5px;
+	height: 516px;
+	position: relative;
+}
+#CorpoinfoIndex #MainContents #PgCategoryLink li {
+	position: absolute;
+}
+#CorpoinfoIndex #MainContents #PgCategoryLink #PgAbsPos01 {
+	left: 22px;
+	bottom: 18px;
+}
+#CorpoinfoIndex #MainContents #PgCategoryLink #PgAbsPos02 {
+	left: 295px;
+	top: 60px;
+}
+#CorpoinfoIndex #MainContents #PgCategoryLink #PgAbsPos03 {
+	right: 16px;
+	top: 20px;
+}
+#CorpoinfoIndex #MainContents #PgCategoryLink #PgAbsPos04 {
+	left: 295px;
+	bottom: 38px;
+}
+#CorpoinfoIndex #MainContents #PgCategoryLink #PgAbsPos05 {
+	right: 16px;
+	bottom: 78px;
+}
+
+/* ------------------
+【CorpoinfoCorpohistory】
+------------------ */
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 {
+	background: url(/corporateinfo/img/corporatehistory_bg_paper_01.jpg) left top repeat scroll;
+	padding-left: 20px;
+}
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 #PgHasBgBox01Inr {
+	background: url(/corporateinfo/img/corporatehistory_bg_timeline_01.gif) 34px 0 repeat-y scroll;
+	padding: 20px 0;
+}
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 .pgSec01 {
+	margin-bottom: 14px;
+}
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 .pgSec01 .pgSec01Top {
+	background: url(/corporateinfo/img/corporatehistory_bg_timeline_02_top.png) left top no-repeat scroll;
+	padding: 0 41px 20px 0;
+}
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 .pgSec01 .pgSec01Top .cmFltLeft {
+	width: 69px;
+	margin-top: 3px;
+	color: #ffffff;
+	line-height: 23px;
+	height: 23px;
+	text-align: center;
+}
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 .pgSec01 .pgSec01Top .cmFltRight {
+	width: 680px;
+	margin-top: 20px;
+}
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 .pgSec01 .pgSec01Mdl {
+	background: url(/corporateinfo/img/corporatehistory_bg_timeline_02_mdl.png) left top no-repeat scroll;
+	padding: 0 41px 20px 99px;
+}
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 .pgSec01 .pgSec01Btm {
+	background: url(/corporateinfo/img/corporatehistory_bg_timeline_02_btm.png) left bottom no-repeat scroll;
+	padding: 0 41px 17px 99px;
+}
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 .pgSec01 .pgList01 li {
+    clear: both;
+	margin-bottom: 9px;
+    padding-left: 10.1em;
+}
+#CorpoinfoCorpohistory #MainContents #PgHasBgBox01 .pgSec01 .pgList01 .pgList01Stit {
+    display: inline;
+    float: left;
+    margin-left: -10.1em;
+}

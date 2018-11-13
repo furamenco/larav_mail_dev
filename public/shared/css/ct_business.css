@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* ============================================================
+＠＠
+各カテゴリ用/business
+
+
+%update / 2013.03.05
+
+▼カテゴリ共通用CSS
+▼ページ用CSS
+
+============================================================ */
+
+/* ------------------------------------------------------------
+▼カテゴリ共通用CSS
+※新規作成したCSSは名前の先頭に『ct』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+[%[BodyClass名]%] #MainContents .ctHogeHoge01
+[%[BodyClass名]%] #MainContents #CtHogeHoge01
+======================= */
+.ctBusiness #MainContents #ContentsBox #SNaviArea li .crNaviBdr {
+	background-color: #fc8b2f;
+}
+.ctBusiness #MainContents #ContentsBox .ctCol2Box01 {
+	margin-bottom: 70px;
+}
+.ctBusiness #MainContents #ContentsBox .ctCol2Box01 .ctCol2Box01Long {
+	width: 560px;
+}
+.ctBusiness #MainContents #ContentsBox .ctCol2Box01 .ctCol2Box01Short {
+	width: 280px;
+}
+.ctBusiness #MainContents #ContentsBox .ctPosFixRight {
+	position: absolute;
+	top: 0;
+	left: 25px;
+	z-index: 10;
+}
+.ctBusiness #MainContents #ContentsBox .ctPosFixLeft {
+	position: absolute;
+	top: 0;
+	left: -25px;
+	z-index: 10;
+}
+
+/* ------------------------------------------------------------
+▼ページ用CSS
+※新規作成したCSSは名前の先頭に『pg』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+------------------
+【[%[BodyID名]%]】
+------------------
+[%[BodyID名]%] #MainContents .pgHogeHoge01
+[%[BodyID名]%] #MainContents #PgHogeHoge01
+======================= */
+
+/* ------------------
+【BusinessIndex】
+------------------ */
+#BusinessIndex #MainContents #PgContentBg01 {
+	background-color: #d9d4cb;	
+}
+#BusinessIndex #MainContents #PgContentBg01 #PgContentBg01Inr {
+	background: url(/business/img/index_bg_main_01.gif) left top no-repeat scroll;
+	margin-left: -6px;
+	padding-left: 6px;
+	height: 536px;
+	position: relative;
+}
+#BusinessIndex #MainContents #PgCategoryLink li {
+	position: absolute;
+}
+#BusinessIndex #MainContents #PgCategoryLink #PgAbsPos01 {
+	left: 19px;
+	bottom: 13px;
+}
+#BusinessIndex #MainContents #PgCategoryLink #PgAbsPos02 {
+	left: 224px;
+	top: 73px;
+}
+#BusinessIndex #MainContents #PgCategoryLink #PgAbsPos03 {
+	right: 218px;
+	top: 43px;
+}
+#BusinessIndex #MainContents #PgCategoryLink #PgAbsPos04 {
+	right: 13px;
+	top: 13px;
+}

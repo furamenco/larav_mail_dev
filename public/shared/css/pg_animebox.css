@@ -1,0 +1,511 @@
+@charset "utf-8";
+/* ============================================================
+＠＠
+ボックスアニメーション用CSS
+
+
+%update / 2013.02.14
+
+▼ボックス共通クラス
+▼カラーセットクラス
+
+============================================================ */
+
+/* ------------------------------------------------------------
+▼ボックス共通クラス
+※新規作成したCSSは名前の先頭に『pg』をつける
+------------------------------------------------------------ */
+#PgBoxAnimation {
+	float: right;
+	width: 890px;
+	height: 594px;
+	overflow: hidden;
+	position: relative;
+	z-index: 4000;
+}
+#PgBoxAnimation .pgBoxItem {
+	width: 99px;
+	height: 99px;
+	position: absolute;
+	z-index: 200;
+}
+#PgBoxAnimation .pgBoxItem .pgBoxItemInr {
+	position: absolute;
+	width: 99px;
+	height: 99px;
+	display: block;
+}
+#PgBoxAnimation .pgBoxItem .pgBoxItemInr a {
+	position: absolute;
+	display: block;
+	width: 99px;
+	height: 99px;
+	cursor: pointer !important;
+	/*background: url(/shared/img/cm_bg_space.gif) repeat left top;*/
+}
+#PgBoxAnimation .pgHasMoveBox {
+	cursor: pointer !important;
+}
+#PgBoxAnimation .pgBoxItem .pgBoxItemInr .pgMoveBox {
+	position: absolute;
+}
+#PgBoxAnimation .pgBoxItem .pgBoxItemInr .pgAnimePaper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 99px;
+	height: 99px;
+	display: block;
+}
+#PgBoxAnimation .pgBoxItem .pgBoxItemInr .pgAnimePaper img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#PgBoxAnimation .pgBoxItem .pgBoxItemInr .pgMoveBoxCaption {
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 198px;
+	height: 99px;
+}
+#PgBoxAnimation .finishFade,
+#PgBoxAnimation .openingFade {
+	position: absolute;
+	z-index: 3100;
+}
+
+#PgBoxAnimation #PgBoxNum01 {
+	top: 0;
+	left: 0;
+}
+#PgBoxAnimation #PgBoxNum02 {
+	top: 0;
+	left: 99px;
+}
+#PgBoxAnimation #PgBoxNum03 {
+	top: 0;
+	left: 198px;
+}
+#PgBoxAnimation #PgBoxNum04 {
+	top: 0;
+	left: 297px;
+}
+#PgBoxAnimation #PgBoxNum05 {
+	top: 0;
+	left: 396px;
+}
+#PgBoxAnimation #PgBoxNum06 {
+	top: 0;
+	left: 495px;
+}
+#PgBoxAnimation #PgBoxNum07 {
+	top: 0;
+	left: 594px;
+}
+#PgBoxAnimation #PgBoxNum08 {
+	top: 0;
+	left: 693px;
+}
+#PgBoxAnimation #PgBoxNum09 {
+	top: 0;
+	left: 792px;
+}
+#PgBoxAnimation #PgBoxNum10 {
+	top: 99px;
+	left: 0;
+}
+#PgBoxAnimation #PgBoxNum11 {
+	top: 99px;
+	left: 99px;
+}
+#PgBoxAnimation #PgBoxNum12 {
+	top: 99px;
+	left: 198px;
+}
+#PgBoxAnimation #PgBoxNum13 {
+	top: 99px;
+	left: 297px;
+}
+#PgBoxAnimation #PgBoxNum14 {
+	top: 99px;
+	left: 396px;
+}
+#PgBoxAnimation #PgBoxNum15 {
+	top: 99px;
+	left: 495px;
+}
+#PgBoxAnimation #PgBoxNum16 {
+	top: 99px;
+	left: 594px;
+}
+#PgBoxAnimation #PgBoxNum17 {
+	top: 99px;
+	left: 693px;
+}
+#PgBoxAnimation #PgBoxNum18 {
+	top: 99px;
+	left: 792px;
+}
+#PgBoxAnimation #PgBoxNum19 {
+	top: 198px;
+	left: 0;
+}
+#PgBoxAnimation #PgBoxNum20 {
+	top: 198px;
+	left: 99px;
+}
+#PgBoxAnimation #PgBoxNum21 {
+	top: 198px;
+	left: 198px;
+}
+#PgBoxAnimation #PgBoxNum22 {
+	top: 198px;
+	left: 297px;
+}
+#PgBoxAnimation #PgBoxNum23 {
+	top: 198px;
+	left: 396px;
+}
+#PgBoxAnimation #PgBoxNum24 {
+	top: 198px;
+	left: 495px;
+}
+#PgBoxAnimation #PgBoxNum25 {
+	top: 198px;
+	left: 594px;
+}
+#PgBoxAnimation #PgBoxNum26 {
+	top: 198px;
+	left: 693px;
+}
+#PgBoxAnimation #PgBoxNum27 {
+	top: 198px;
+	left: 792px;
+}
+#PgBoxAnimation #PgBoxNum28 {
+	top: 297px;
+	left: 0;
+}
+#PgBoxAnimation #PgBoxNum29 {
+	top: 297px;
+	left: 99px;
+}
+#PgBoxAnimation #PgBoxNum30 {
+	top: 297px;
+	left: 198px;
+}
+#PgBoxAnimation #PgBoxNum31 {
+	top: 297px;
+	left: 297px;
+}
+#PgBoxAnimation #PgBoxNum32 {
+	top: 297px;
+	left: 396px;
+}
+#PgBoxAnimation #PgBoxNum33 {
+	top: 297px;
+	left: 495px;
+}
+#PgBoxAnimation #PgBoxNum34 {
+	top: 297px;
+	left: 594px;
+}
+#PgBoxAnimation #PgBoxNum35 {
+	top: 297px;
+	left: 693px;
+}
+#PgBoxAnimation #PgBoxNum36 {
+	top: 297px;
+	left: 792px;
+}
+#PgBoxAnimation #PgBoxNum37 {
+	top: 396px;
+	left: 0;
+}
+#PgBoxAnimation #PgBoxNum38 {
+	top: 396px;
+	left: 99px;
+}
+#PgBoxAnimation #PgBoxNum39 {
+	top: 396px;
+	left: 198px;
+}
+#PgBoxAnimation #PgBoxNum40 {
+	top: 396px;
+	left: 297px;
+}
+#PgBoxAnimation #PgBoxNum41 {
+	top: 396px;
+	left: 396px;
+}
+#PgBoxAnimation #PgBoxNum42 {
+	top: 396px;
+	left: 495px;
+}
+#PgBoxAnimation #PgBoxNum43 {
+	top: 396px;
+	left: 594px;
+}
+#PgBoxAnimation #PgBoxNum44 {
+	top: 396px;
+	left: 693px;
+}
+#PgBoxAnimation #PgBoxNum45 {
+	top: 396px;
+	left: 792px;
+}
+#PgBoxAnimation #PgBoxNum46 {
+	top: 495px;
+	left: 0;
+}
+#PgBoxAnimation #PgBoxNum47 {
+	top: 495px;
+	left: 99px;
+}
+#PgBoxAnimation #PgBoxNum48 {
+	top: 495px;
+	left: 198px;
+}
+#PgBoxAnimation #PgBoxNum49 {
+	top: 495px;
+	left: 297px;
+}
+#PgBoxAnimation #PgBoxNum50 {
+	top: 495px;
+	left: 396px;
+}
+#PgBoxAnimation #PgBoxNum51 {
+	top: 495px;
+	left: 495px;
+}
+#PgBoxAnimation #PgBoxNum52 {
+	top: 495px;
+	left: 594px;
+}
+#PgBoxAnimation #PgBoxNum53 {
+	top: 495px;
+	left: 693px;
+}
+#PgBoxAnimation #PgBoxNum54 {
+	top: 495px;
+	left: 792px;
+}
+
+/* ------------------------------------------------------------
+▼カラーセットクラス
+※新規作成したCSSは名前の先頭に『pg』をつける
+------------------------------------------------------------ */
+
+/* ------------------
+【pgBoxColorSet01】
+------------------ */
+#PgBoxAnimation .pgBoxItem .pgBoxColorSet01 {
+	/* 指定なし JSで制御 */
+}
+/* ------------------
+【pgBoxColorSet02】
+------------------ */
+/* normal */
+#PgBoxAnimation #PgBoxNum01 .pgBoxColorSet02 {
+	background-color: #de82bf;
+}
+#PgBoxAnimation #PgBoxNum02 .pgBoxColorSet02 {
+	background-color: #bcc84f;
+}
+#PgBoxAnimation #PgBoxNum03 .pgBoxColorSet02 {
+	background-color: #e5a1a1;
+}
+#PgBoxAnimation #PgBoxNum04 .pgBoxColorSet02 {
+	background-color: #379f6e;
+}
+#PgBoxAnimation #PgBoxNum05 .pgBoxColorSet02 {
+	background-color: #af9fa2;
+}
+#PgBoxAnimation #PgBoxNum06 .pgBoxColorSet02 {
+	background-color: #e2ba5b;
+}
+#PgBoxAnimation #PgBoxNum07 .pgBoxColorSet02 {
+	background-color: #e6706a;
+}
+#PgBoxAnimation #PgBoxNum08 .pgBoxColorSet02 {
+	background-color: #de82bf;
+}
+#PgBoxAnimation #PgBoxNum09 .pgBoxColorSet02 {
+	background-color: #e4aaaa;
+}
+#PgBoxAnimation #PgBoxNum10 .pgBoxColorSet02 {
+	background-color: #379f6e;
+}
+#PgBoxAnimation #PgBoxNum11 .pgBoxColorSet02 {
+	background-color: #78b168;
+}
+#PgBoxAnimation #PgBoxNum12 .pgBoxColorSet02 {
+	background-color: #de82bf;
+}
+#PgBoxAnimation #PgBoxNum13 .pgBoxColorSet02 {
+	background-color: #e5a1a1;
+}
+#PgBoxAnimation #PgBoxNum14 .pgBoxColorSet02 {
+	background-color: #6dc87a;
+}
+#PgBoxAnimation #PgBoxNum15 .pgBoxColorSet02 {
+	background-color: #de82bf;
+}
+#PgBoxAnimation #PgBoxNum16 .pgBoxColorSet02 {
+	background-color: #bcc84f;
+}
+#PgBoxAnimation #PgBoxNum17 .pgBoxColorSet02 {
+	background-color: #e2ba5b;
+}
+#PgBoxAnimation #PgBoxNum18 .pgBoxColorSet02 {
+	background-color: #78b168;
+}
+#PgBoxAnimation #PgBoxNum19 .pgBoxColorSet02 {
+	background-color: #bbb1b2;
+}
+#PgBoxAnimation #PgBoxNum20 .pgBoxColorSet02 {
+	background-color: #e2ba5b;
+}
+#PgBoxAnimation #PgBoxNum21 .pgBoxColorSet02 {
+	background-color: #e4aaaa;
+}
+#PgBoxAnimation #PgBoxNum22 .pgBoxColorSet02 {
+	background-color: #78b168;
+}
+#PgBoxAnimation #PgBoxNum23 .pgBoxColorSet02 {
+	background-color: #f6d482;
+}
+#PgBoxAnimation #PgBoxNum24 .pgBoxColorSet02 {
+	background-color: #46c8a4;
+}
+#PgBoxAnimation #PgBoxNum25 .pgBoxColorSet02 {
+	background-color: #379f6e;
+}
+#PgBoxAnimation #PgBoxNum26 .pgBoxColorSet02 {
+	background-color: #e4aaaa;
+}
+#PgBoxAnimation #PgBoxNum27 .pgBoxColorSet02 {
+	background-color: #de82bf;
+}
+#PgBoxAnimation #PgBoxNum28 .pgBoxColorSet02 {
+	background-color: #7bd6bd;
+}
+#PgBoxAnimation #PgBoxNum29 .pgBoxColorSet02 {
+	background-color: #9e8f92;
+}
+#PgBoxAnimation #PgBoxNum30 .pgBoxColorSet02 {
+	background-color: #e2ba5b;
+}
+#PgBoxAnimation #PgBoxNum31 .pgBoxColorSet02 {
+	background-color: #af9fa2;
+}
+#PgBoxAnimation #PgBoxNum32 .pgBoxColorSet02 {
+	background-color: #e4aaaa;
+}
+#PgBoxAnimation #PgBoxNum33 .pgBoxColorSet02 {
+	background-color: #bcc84f;
+}
+#PgBoxAnimation #PgBoxNum34 .pgBoxColorSet02 {
+	background-color: #e4aaaa;
+}
+#PgBoxAnimation #PgBoxNum35 .pgBoxColorSet02 {
+	background-color: #de82bf;
+}
+#PgBoxAnimation #PgBoxNum36 .pgBoxColorSet02 {
+	background-color: #bdc84f;
+}
+#PgBoxAnimation #PgBoxNum37 .pgBoxColorSet02 {
+	background-color: #e6706a;
+}
+#PgBoxAnimation #PgBoxNum38 .pgBoxColorSet02 {
+	background-color: #de82bf;
+}
+#PgBoxAnimation #PgBoxNum39 .pgBoxColorSet02 {
+	background-color: #98bd8e;
+}
+#PgBoxAnimation #PgBoxNum40 .pgBoxColorSet02 {
+	background-color: #de82bf;
+}
+#PgBoxAnimation #PgBoxNum41 .pgBoxColorSet02 {
+	background-color: #379f6e;
+}
+#PgBoxAnimation #PgBoxNum42 .pgBoxColorSet02 {
+	background-color: #7bd6bd;
+}
+#PgBoxAnimation #PgBoxNum43 .pgBoxColorSet02 {
+	background-color: #ec606a;
+}
+#PgBoxAnimation #PgBoxNum44 .pgBoxColorSet02 {
+	background-color: #e4aaaa;
+}
+#PgBoxAnimation #PgBoxNum45 .pgBoxColorSet02 {
+	background-color: #e2ba5b;
+}
+#PgBoxAnimation #PgBoxNum46 .pgBoxColorSet02 {
+	background-color: #bcc84f;
+}
+#PgBoxAnimation #PgBoxNum47 .pgBoxColorSet02 {
+	background-color: #7bd6bd;
+}
+#PgBoxAnimation #PgBoxNum48 .pgBoxColorSet02 {
+	background-color: #379f6e;
+}
+#PgBoxAnimation #PgBoxNum49 .pgBoxColorSet02 {
+	background-color: #bcc84f;
+}
+#PgBoxAnimation #PgBoxNum50 .pgBoxColorSet02 {
+	background-color: #9e8f92;
+}
+#PgBoxAnimation #PgBoxNum51 .pgBoxColorSet02 {
+	background-color: #98bd8e;
+}
+#PgBoxAnimation #PgBoxNum52 .pgBoxColorSet02 {
+	background-color: #e4aaaa;
+}
+#PgBoxAnimation #PgBoxNum53 .pgBoxColorSet02 {
+	background-color: #379f6e;
+}
+#PgBoxAnimation #PgBoxNum54 .pgBoxColorSet02 {
+	background-color: #bcc84f;
+}
+/* CUD */
+.changeCUD #PgBoxAnimation #PgBoxNum02 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #7d8a0a;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum07 .pgBoxColorSet02 {
+	background-color: #0d7d48;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum09 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #e3540e;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum10 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #0b7040;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum17 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #7d8a0a;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum20 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #e3540e;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum27 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #b03f8a;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum28 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #056b5b;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum35 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #b03f8a;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum38 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #b03f8a;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum45 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #7d8a0a;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum46 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #7c8626;
+}
+.changeCUD #PgBoxAnimation #PgBoxNum53 .pgBoxColorSet02 {
+	background: url(/img/index_bg_main_01.png) no-repeat left top scroll #0d7d48;
+}

@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* ============================================================
+＠＠
+初期化
+
+%update / 2013.02.07
+
+------------------
+【目次】
+------------------
+▼initialization
+▼other hack
+============================================================ */
+
+/* ------------------------------------------------------------
+▼initialization
+------------------------------------------------------------ */
+div,p,dl,dt,dd,ul,ol,li,table,tr,th,td,
+h1,h2,h3,h4,h5,h6,form,input,textarea,button,fieldset,blockquote {
+	margin: 0;
+	padding: 0;
+	zoom: 1;  /* for IE hasLayout true */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #333333;
+	font-size: 13px;
+	*font-size: small;
+	*font: x-small;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'ＭＳ Ｐゴシック', 'MS PGothic', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, Arial, Helvetica, Verdana, sans-serif;
+	/*  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', Verdana, Arial, Helvetica, sans-serif;  */
+	/*  font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', Verdana, Arial, Helvetica, sans-serif;*/
+	line-height: 2.2em;
+}
+
+/* ======
+about font-size:
+※入れ子でない場合のみ
+20px => 153.9%
+19px => 146.5%
+18px => 138.5%
+17px => 131%
+16px => 123.1%
+15px => 116%
+14px => 108%
+13px => 100%
+12px => 93%
+11px => 85%
+10px => 77%
+====== */
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 113.4%; /* 16px */
+	font-weight: bold;
+}
+
+input, textarea {
+	padding: 0px;
+	vertical-align: middle;
+}
+
+select {
+	padding: 0px;
+	vertical-align: middle;
+}
+* html select { vertical-align: -0.25em; }  /* for IE6 */
+
+em, strong {
+	font-weight: bold;
+	font-style: normal;
+	color: 333333;
+}
+
+hr { display: none;}
+
+img {
+	border: none;
+	vertical-align: bottom;
+	outline: none;
+}
+
+li { list-style: none outside; }
+
+table {
+	font-size: inherit;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+map {
+	display: none;
+}
+
+a:link {
+    color: #0a6eca;
+    text-decoration: none;
+	outline: none;
+}
+a:visited,
+a:active {
+    color: #0a6eca;
+    text-decoration: none;
+	outline: none;
+}
+a:hover {
+    color: #0a6eca;
+    text-decoration: underline;
+	outline: none;
+}
+
+sub {
+	vertical-align: 0;
+	line-height: 1.0em;
+}
+sup {
+	vertical-align: 0.3em;
+	line-height: 1.0em;
+}
+
+/* ------------------------------------------------------------
+▼other hack
+------------------------------------------------------------ */
+/* for IE6 background flicker bug */
+* html { filter: expression( document.execCommand("BackgroundImageCache", false, true) ); }

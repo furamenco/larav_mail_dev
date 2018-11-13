@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* ============================================================
+＠＠
+各カテゴリ用/Root
+
+
+%update / 2013.02.07
+
+▼カテゴリ共通用クラス
+▼ページ用クラス
+
+============================================================ */
+
+/* ------------------------------------------------------------
+▼カテゴリ共通用クラス
+※新規作成したCSSは名前の先頭に『ct』をつける
+------------------------------------------------------------ */
+
+/* 記述例 =================
+[%[BodyClass名]%] #MainContents .ctHogeHoge01
+=========================== */
+.ctRoot #MainContents .ctTit01 {
+	padding-bottom: 21px;
+}
+.ctRoot #MainContents .ctBox01 {
+	background: #d9d4cb url(/img/inquiry_bg_main_01.jpg) no-repeat right top scroll;
+	padding: 99px 39px 15px 30px;
+	line-height: 1.0em;
+}
+.ctRoot #MainContents .ctBox01 .ctBox01InrTop {
+	background: url(/img/inquiry_bg_main_02_top.png) no-repeat left top scroll;
+	min-height: 903px;
+	padding: 39px 87px 0 94px;
+}
+.ctRoot #MainContents .ctBox01 .cmBorderList01 li {
+	clear: both;
+	padding: 14px 0 14px 150px;
+}
+.ctRoot #MainContents .ctBox01 .cmBorderList01 .ctListTit01 {
+	display: inline;
+    float: left;
+	line-height: 1.2em;
+	margin-left: -150px;
+}
+.ctRoot #MainContents .ctBox01 .cmBorderList01 .ctTxtCaution01 {
+	margin-left: -150px;
+}
+.ctRoot #MainContents .ctBox01 .cmBorderList01 .cmLabel01 {
+	padding-right: 26px;
+}
+.ctRoot #MainContents .ctBox01 .cmBorderList01 .cmLastItem {
+	padding-right: 0;
+}
+.ctRoot #MainContents .ctBox01 .ctBox01InrBtm {
+	background: url(/img/inquiry_bg_main_02_btm.png) no-repeat left top scroll;
+	height: 65px;
+	width: 772px;
+}
+.ctRoot #MainContents .ctBox01 .ctWidth01 {
+	width: 322px;
+	margin: 0 auto;
+}
+.ctRoot #MainContents .ctBox02 {
+	background-color: #d9d4cb;
+	padding: 25px;
+	line-height: 1.6em;
+}
+.ctRoot #MainContents .ctBox02 .ctBox02Inr {
+	background: url(/img/inquiry_bg_main_03.jpg) #ffffff no-repeat right top scroll;
+	padding: 43px 98px 30px;
+}
+.ctRoot #MainContents .ctBox02 .ctMb01 {
+	margin-bottom: 114px;
+}
+
+
+/* ------------------------------------------------------------
+▼ページ用クラス
+※新規作成したCSSは名前の先頭に『pg』をつける
+------------------------------------------------------------ */
+
+/* 記述例 =================
+------------------
+【[%[BodyID名]%]】
+------------------
+[%[BodyID名]%] #MainContents .pgHogeHoge01
+=========================== */
+
+
+/* ------------------
+【RootIndex】
+------------------ */
+#PgCUDBtn01 {
+	position: absolute;
+	right: -75px;
+	top: 315px;
+	z-index: 9000;
+}
+#PgCUDBtn01 a .pgCUDBtn01Item {
+	display: block;
+}
+#RootIndex #PgNewsBox01 {
+	width: 982px;
+	margin: 22px auto 20px;
+	line-height: 1.6em;
+	background: url(/img/index_bg_news_01_btm.gif) no-repeat left bottom scroll;
+}
+#RootIndex #PgNewsBox01 #PgNewsBox01Inr {
+	background: url(/img/index_bg_news_01_top.gif) no-repeat left top scroll;
+	padding: 22px 21px 35px 27px;
+}
+#RootIndex #PgNewsBox01 h2 {
+	padding-top: 4px; 
+}
+#RootIndex #PgNewsBox01 #PgNewsList {
+	width: 810px;
+}
+#RootIndex #PgNewsBox01 #PgNewsList li.pgPicUpItem {
+	float: left;
+	width: 385px;
+	margin-left: 20px;
+	clear: none;
+	padding-top: 0;
+	/*margin: 0 20px 7px 0;*/
+}
+#RootIndex #PgNewsBox01 #PgNewsList li.pgPicUpItem .pgDate {
+	margin-bottom: 3px;
+}
+#RootIndex #PgNewsBox01 #PgNewsList li.pgPicUpItem p {
+	display: table-cell;
+	vertical-align: top;
+}
+/*for IE7 */
+*:first-child+html #RootIndex #PgNewsBox01 #PgNewsList li.pgPicUpItem p {
+	display: inline;
+	zoom: 1;
+}
+#RootIndex #PgNewsBox01 #PgNewsList li.pgPicUpItem .pgNewsImg {
+	background: url(/img/index_bg_news_02.gif) no-repeat left top scroll;
+	padding: 1px 20px 2px 1px;
+}
+#RootIndex #PgNewsBox01 #PgNewsList li.pgPicUpItem .pgDate {
+	display: block;
+}
+#RootIndex #PgNewsBox01 #PgNewsList li.pgTxtItem {
+	padding-top: 10px;
+    padding-left: 142px;
+	margin-left: 20px;
+	clear: both;
+	background: url(/img/index_bg_mrk_01.gif) no-repeat 129px 15px scroll;
+}
+#RootIndex #PgNewsBox01 #PgNewsList li.pgTxtItem .pgDate {
+	display: inline;
+    float: left;
+    margin-left: -142px;
+}
+#RootIndex #PgBox01 {
+	width: 980px;
+	margin: 0 auto;
+	line-height: 1.6em;
+}
+#RootIndex #PgBox01 #PgList01 {
+	float: left;
+}
+#RootIndex #PgBox01 #PgList01 li {
+	float: left;
+	text-align: center;
+}
+#RootIndex #PgBox01 #PgList01 li .listImg {
+	margin-bottom: 15px;
+	border-right: solid 1px #c1c1c1;
+}
+#RootIndex #PgBox01 #PgList01 li .cmTxt {
+	line-height: 1.6em;
+}
+#RootIndex #PgBox01 #PgList01 li.cmLastItem .listImg {
+	border-right: none;
+}
+#RootIndex #PgBox01 #PgSldBox01 {
+	border: solid 3px #cbc7c0;
+	float: right;
+	width: 429px;
+}
+#RootIndex #PgBox01 #PgSldBox01 .cmFltLeft {
+	margin: 10px 16px 10px 10px;
+}
+#RootIndex #PgBox01 #PgSldBox01 .cmFltRight {
+	margin: 16px 0 9px;
+	width: 330px;
+}
+#RootIndex #PgBox01 #PgSldBox01 .cmFltRight a {
+	color: #333333;
+}

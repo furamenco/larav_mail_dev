@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* ============================================================
+＠＠
+各カテゴリ用/message
+
+
+%update / 2013.02.07
+
+▼カテゴリ共通用CSS
+▼ページ用CSS
+
+============================================================ */
+
+/* ------------------------------------------------------------
+▼カテゴリ共通用CSS
+※新規作成したCSSは名前の先頭に『ct』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+[%[BodyClass名]%] #MainContents .ctHogeHoge01
+[%[BodyClass名]%] #MainContents #CtHogeHoge01
+======================= */
+.ctMessage #MainContents #ContentsBox #SNaviArea li .crNaviBdr {
+	background-color: #2aab64;
+}
+.ctMessage #MainContents .ctMb01 {
+	margin-bottom: 55px;
+}
+.ctMessage #MainContents .ctMb02 {
+	margin-bottom: 60px;
+}
+.ctMessage #MainContents .ctCol2Box01 a {
+	display: block;
+	min-height: 32px;
+	line-height: 1.0em;
+	color: #333333;
+	text-decoration: none;
+}
+.ctMessage #MainContents .ctCol2Box01 .ctCol2Box01A a {
+	background: url(/message/img/cm_bg_prev_01.gif) left top no-repeat scroll;
+	padding-left: 40px;
+}
+.ctMessage #MainContents .ctCol2Box01 .ctCol2Box01B a {
+	background: url(/message/img/cm_bg_next_01.gif) right top no-repeat scroll;
+	padding-right: 40px;
+}
+.ctMessage #MainContents .ctCol2Box01 a .cmFontSS {
+	color: #666666;
+	display: block;
+	margin-bottom: 1px;
+}
+
+/* ------------------------------------------------------------
+▼ページ用CSS
+※新規作成したCSSは名前の先頭に『pg』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+------------------
+【[%[BodyID名]%]】
+------------------
+[%[BodyID名]%] #MainContents .pgHogeHoge01
+[%[BodyID名]%] #MainContents #PgHogeHoge01
+======================= */
+
+/* ------------------
+【MessageIndex】
+------------------ */
+#MessageIndex #MainContents #PgContentBg01 {
+	background-color: #d9d4cb;	
+}
+#MessageIndex #MainContents #PgContentBg01 #PgContentBg01Inr {
+	background: url(/message/img/index_bg_main_01.gif) left top no-repeat scroll;
+	margin-left: -6px;
+	padding-left: 6px;
+	height: 536px;
+	position: relative;
+}
+#MessageIndex #MainContents #PgCategoryLink li {
+	position: absolute;
+}
+#MessageIndex #MainContents #PgCategoryLink #PgAbsPos01 {
+	left: 22px;
+	bottom: 18px;
+}
+#MessageIndex #MainContents #PgCategoryLink #PgAbsPos02 {
+	left: 295px;
+	top: 60px;
+}
+#MessageIndex #MainContents #PgCategoryLink #PgAbsPos03 {
+	right: 16px;
+	top: 20px;
+}

@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* ============================================================
+＠＠
+各カテゴリ用/newsrelease
+
+
+%update / 2013.03.05
+
+▼カテゴリ共通用CSS
+▼ページ用CSS
+
+============================================================ */
+
+/* ------------------------------------------------------------
+▼カテゴリ共通用CSS
+※新規作成したCSSは名前の先頭に『ct』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+[%[BodyClass名]%] #MainContents .ctHogeHoge01
+[%[BodyClass名]%] #MainContents #CtHogeHoge01
+======================= */
+.ctNewsrelease {
+	line-height: 1.6em;
+}
+.ctNewsrelease #MainContents h1.cmHasImgTit01 {
+	padding-bottom: 21px;
+}
+.ctNewsrelease #MainContents .ctBorderBox01 {
+	margin-top: 68px;
+	padding-top: 28px;
+	background: url(/shared/img/cm_bg_border_01.gif) repeat-x left top scroll;
+}
+
+/* ------------------------------------------------------------
+▼ページ用CSS
+※新規作成したCSSは名前の先頭に『pg』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+------------------
+【[%[BodyID名]%]】
+------------------
+[%[BodyID名]%] #MainContents .pgHogeHoge01
+[%[BodyID名]%] #MainContents #PgHogeHoge01
+======================= */
+
+/* ------------------
+【NewsreleaseIndex】
+------------------ */
+#NewsreleaseIndex #MainContents .pgSecBox01 {
+	padding-top: 30px;
+}
+#NewsreleaseIndex #MainContents .pgSecBox01 .pgNewsList li {
+	clear: both;
+	padding: 11px 7px 11px 11.2em;
+	background: url(/shared/img/cm_bg_dot_01.gif) repeat-x left bottom scroll;
+}
+#NewsreleaseIndex #MainContents .pgSecBox01 .pgNewsList li .pgDate {
+	display: inline;
+    float: left;
+    margin-left: -10.7em;
+}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* ============================================================
+＠＠
+各カテゴリ用/popup
+
+
+%update / 2013.03.05
+
+▼カテゴリ共通用CSS
+▼ページ用CSS
+
+============================================================ */
+
+/* ------------------------------------------------------------
+▼カテゴリ共通用CSS
+※新規作成したCSSは名前の先頭に『ct』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+[%[BodyClass名]%] #MainContents .ctHogeHoge01
+[%[BodyClass名]%] #MainContents #CtHogeHoge01
+======================= */
+.ctPopup #PopupContentWrap {
+	width: 600px;
+	margin: 0 auto;
+}
+.ctPopup #PopupContentWrap #PopupHeader,
+.ctPopup #PopupContentWrap #PopupFooter {
+	border-top: solid 5px #544f4f;
+}
+.ctPopup #PopupContentWrap #PopupHeader {
+	margin-bottom: 15px;
+}
+.ctPopup #PopupContentWrap #PopupHeader #HdLogo {
+	padding-top: 14px;
+	padding-left: 9px;
+}
+.ctPopup #PopupMainContents {
+	background-color: #ffffff;
+	margin-bottom: 15px;
+	padding: 20px;
+}
+.ctPopup #PopupMainContents #CtScrollBox {
+	width: 560px;
+	height: 340px;
+	overflow-y: scroll;
+}
+.ctPopup #PopupMainContents #CtScrollBox #CtScrollBoxInr {
+	padding-right: 10px;
+}
+.ctPopup #PopupFooter #FooterInr {
+	padding: 9px 0 0;
+}
+
+/* ------------------------------------------------------------
+▼ページ用CSS
+※新規作成したCSSは名前の先頭に『pg』をつける
+------------------------------------------------------------ */
+
+/* 例 =================
+------------------
+【[%[BodyID名]%]】
+------------------
+[%[BodyID名]%] #MainContents .pgHogeHoge01
+[%[BodyID名]%] #MainContents #PgHogeHoge01
+======================= */
+
+
