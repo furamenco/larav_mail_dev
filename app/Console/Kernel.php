@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        //メール配信
+        \App\Console\Commands\SendMailCronCommand::class,
     ];
 
     /**

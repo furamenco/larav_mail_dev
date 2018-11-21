@@ -5,6 +5,7 @@ use Carbon\Carbon;
 
 class Common
 {
+    //現時間取得
     public static function getNow(){
         return Carbon::now();
     }
@@ -227,6 +228,28 @@ class Common
         } else {
             return false;
         }
+    }
+
+    //メール送信
+    public static function sendMail($value){
+        if(preg_match('/^(https?|ftp)(:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:\@&=+\$,%#]+)$/', $value)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    //メール用置き換え
+    public static function pregBody($body, $param){
+        $ret = $body;
+        if(is_array($param)){
+            foreach($param as $key => $value){
+                $patarn = '{{$'.$key.'}}';
+                $ret = str_replace($patarn, $value, $ret);
+            }
+        }
+        return $ret;
     }
 
 
